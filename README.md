@@ -1,3 +1,3 @@
 # RZExtensions
 
-A description of this package.
+Common extensions used for Apple platforms (e.g. `UIKit`, `SwiftUI`, `Combine`, et cetera).
