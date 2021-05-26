@@ -1,11 +1,11 @@
 import Combine
 
 public extension AnyCancellable {
-    public func store(in cancellable: inout Self) {
+    func store(in cancellable: inout AnyCancellable) {
         cancellable = self
     }
 
-    public func store(in cancellable: inout Self?) {
+    func store(in cancellable: inout AnyCancellable?) {
         cancellable = self
     }
 }
