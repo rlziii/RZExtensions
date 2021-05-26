@@ -10,7 +10,7 @@ https://github.com/rlziii/RZExtensions
 
 
 ## Minimum Targets
-macOS: `11`
-iOS/iPadOS: `14`
-tvOS: `14`
-watchOS: `7`
+macOS: `11` 
+iOS/iPadOS: `14` 
+tvOS: `14` 
+watchOS: `7` 
