@@ -1,8 +1,7 @@
 import Combine
 
 public extension Publisher {
-    func mapToVoid() -> AnyPublisher<Void, Failure> {
+    func mapToVoid() -> Publishers.Map<Self, Void> {
         map { _ in () }
-            .eraseToAnyPublisher()
     }
 }
