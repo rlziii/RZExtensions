@@ -2,7 +2,7 @@
 import UIKit
 
 /// A `UIViewController` subclass (generic over some `UIView`) that handles programmatic Auto Layout setup more cleanly.
-public class ProgrammaticViewController<View: UIView>: UIViewController {
+open class ProgrammaticViewController<View: UIView>: UIViewController {
 
     // MARK: - Public Properties
 

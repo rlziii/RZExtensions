@@ -2,7 +2,7 @@
 import UIKit
 
 /// A `UIView` subclass that handles programmatic Auto Layout setup more cleanly.
-public class ProgrammaticView: UIView {
+open class ProgrammaticView: UIView {
 
     // MARK: - Private Properties
 
