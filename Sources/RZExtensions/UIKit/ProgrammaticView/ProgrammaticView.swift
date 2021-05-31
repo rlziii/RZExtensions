@@ -3,9 +3,14 @@ import UIKit
 
 /// A `UIView` subclass that handles programmatic Auto Layout setup more cleanly.
 class ProgrammaticView: UIView {
+
+    // MARK: - Private Properties
+
     private var hasSetupSelf = false
     private var hasSetupSubviews = false
     private var hasSetupConstraints = false
+
+    // MARK: - Initialization
 
     init() {
         super.init(frame: .zero)
@@ -23,6 +28,8 @@ class ProgrammaticView: UIView {
     required init?(coder: NSCoder) {
         fatalError("Use \(String(describing: ProgrammaticView.init)) instead.")
     }
+
+    // MARK: - Public Methods
 
     /// Override this method to perform any view setup, such as changing the view's background color.
     /// This method is called during the view's `init()` method and should not be called manually.
