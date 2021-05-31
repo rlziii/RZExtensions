@@ -25,7 +25,7 @@ open class ProgrammaticView: UIView {
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("Use \(String(describing: ProgrammaticView.init)) instead.")
     }
 
