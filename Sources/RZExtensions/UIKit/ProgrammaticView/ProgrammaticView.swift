@@ -34,7 +34,7 @@ open class ProgrammaticView: UIView {
     /// Override this method to perform any view setup, such as changing the view's background color.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupSelf()` at the beginning of the overridden version of this method.
-    public func setupSelf() {
+    open func setupSelf() {
         guard !hasSetupSelf else {
             assertionFailure("Attempted to execute \(#function) for more than once.")
             return
@@ -46,7 +46,7 @@ open class ProgrammaticView: UIView {
     /// Override this method to setup the view's subviews.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupSubviews()` at the beginning of the overridden version of this method.
-    public func setupSubviews() {
+    open func setupSubviews() {
         guard !hasSetupSubviews else {
             assertionFailure("Attempted to execute \(#function) more than once.")
             return
@@ -58,7 +58,7 @@ open class ProgrammaticView: UIView {
     /// Override this method to setup the view's constraints.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupConstraints()` at the beginning of the overridden version of this method.
-    public func setupConstraints() {
+    open func setupConstraints() {
         guard !hasSetupConstraints else {
             assertionFailure("Attempted to execute \(#function) more than once.")
             return
