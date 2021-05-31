@@ -12,7 +12,7 @@ public class ProgrammaticView: UIView {
 
     // MARK: - Initialization
 
-    init() {
+    public init() {
         super.init(frame: .zero)
         setupSelf()
         setupSubviews()
@@ -20,12 +20,12 @@ public class ProgrammaticView: UIView {
     }
 
     @available(*, unavailable)
-    override init(frame: CGRect) {
+    private override init(frame: CGRect) {
         fatalError("Use \(String(describing: ProgrammaticView.init)) instead.")
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    private required init?(coder: NSCoder) {
         fatalError("Use \(String(describing: ProgrammaticView.init)) instead.")
     }
 
@@ -34,7 +34,7 @@ public class ProgrammaticView: UIView {
     /// Override this method to perform any view setup, such as changing the view's background color.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupSelf()` at the beginning of the overridden version of this method.
-    func setupSelf() {
+    public func setupSelf() {
         guard !hasSetupSelf else {
             assertionFailure("Attempted to execute \(#function) for more than once.")
             return
@@ -46,7 +46,7 @@ public class ProgrammaticView: UIView {
     /// Override this method to setup the view's subviews.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupSubviews()` at the beginning of the overridden version of this method.
-    func setupSubviews() {
+    public func setupSubviews() {
         guard !hasSetupSubviews else {
             assertionFailure("Attempted to execute \(#function) more than once.")
             return
@@ -58,7 +58,7 @@ public class ProgrammaticView: UIView {
     /// Override this method to setup the view's constraints.
     /// This method is called during the view's `init()` method and should not be called manually.
     /// Always be sure to call `super.setupConstraints()` at the beginning of the overridden version of this method.
-    func setupConstraints() {
+    public func setupConstraints() {
         guard !hasSetupConstraints else {
             assertionFailure("Attempted to execute \(#function) more than once.")
             return
