@@ -20,4 +20,14 @@ public struct BindablePreviewWrapper<Content: View, T>: View {
     public var body: some View {
         content($initialValue)
     }
+
+    /// Creates a new `BindablePreviewWrapper` with an initial value for the `@Binding` property.
+    ///
+    /// - Parameters:
+    ///   - initialValue: The initial value for the `@Binding` property.
+    ///   - content: The concrete `View` to be wrapped for previewing.
+    public init(initialValue: T, content: @escaping (Binding<T>) -> Content) {
+        self._initialValue = State(initialValue: initialValue)
+        self.content = content
+    }
 }
