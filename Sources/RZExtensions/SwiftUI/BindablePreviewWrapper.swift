@@ -14,8 +14,8 @@ import SwiftUI
 /// }
 /// ```
 public struct BindablePreviewWrapper<Content: View, T>: View {
-    @State public var initialValue: T
-    @ViewBuilder public let content: (Binding<T>) -> Content
+    @State private var initialValue: T
+    @ViewBuilder private let content: (Binding<T>) -> Content
 
     public var body: some View {
         content($initialValue)
