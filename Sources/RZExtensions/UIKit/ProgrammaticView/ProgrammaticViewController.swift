@@ -1,4 +1,4 @@
-#if canImport(UIKit)
+#if os(iOS)
 import UIKit
 
 /// A `UIViewController` subclass (generic over some `UIView`) that handles programmatic Auto Layout setup more cleanly.
