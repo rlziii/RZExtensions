@@ -4,15 +4,14 @@ import SwiftUI
 /// Generic over a concrete `View` type and the `@Binding`'s type.
 ///
 /// Example usage:
-/// ```
-/// struct SomeView_Previews: PreviewProvider {
-///   static var previews: some View {
-///     BindablePreviewWrapper(initialValue: 0.0) { position in
-///       SomeView(position: position)
+///
+///     struct SomeView_Previews: PreviewProvider {
+///       static var previews: some View {
+///         BindablePreviewWrapper(initialValue: 0.0) { position in
+///           SomeView(position: position)
+///         }
+///       }
 ///     }
-///   }
-/// }
-/// ```
 public struct BindablePreviewWrapper<Content: View, T>: View {
     @State private var initialValue: T
     @ViewBuilder private let content: (Binding<T>) -> Content
