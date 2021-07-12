@@ -9,10 +9,10 @@ https://github.com/rlziii/RZExtensions
 ```
 
 ## Minimum Targets
-macOS: `11`  
-iOS/iPadOS: `14`  
-tvOS: `14`  
-watchOS: `7`
+macOS: `11.0`  
+iOS/iPadOS: `14.0`  
+tvOS: `14.0`  
+watchOS: `7.0`
 
 ## License
 
