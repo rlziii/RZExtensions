@@ -22,8 +22,9 @@ public extension Optional {
         line: UInt = #line
     ) -> Wrapped {
         guard let self = self else {
-            assertionFailure("Could not unwrap value of type [\(Wrapped.self)] in file [\(file)] at line [\(line)]. Returning value [\(function)] instead.")
-            return fallback()
+            let fallback = fallback()
+            assertionFailure("Could not unwrap value of type [\(Wrapped.self)] in file [\(file)] at line [\(line)]. Returning value [\(fallback)] instead.")
+            return fallback
         }
 
         return self
