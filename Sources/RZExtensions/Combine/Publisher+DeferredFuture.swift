@@ -22,7 +22,7 @@ public struct DeferredFuture<Output, Failure>: Publisher where Failure: Error {
 
     private let deferredFuture: Deferred<Future<Output, Failure>>
 
-    /// ...
+    /// Creates a `DeferredFuture` publisher.
     ///
     /// - Parameter attemptToFulfill: A Future.Promise that the publisher invokes when the publisher emits an element or terminates with an error.
     public init(_ attemptToFulfill: @escaping (@escaping Promise) -> Void) {
