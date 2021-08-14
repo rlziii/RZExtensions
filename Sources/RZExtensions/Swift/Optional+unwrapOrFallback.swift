@@ -1,6 +1,6 @@
 public extension Optional {
-    /// Attempts to unwrap an optional value and either returns the unwrapped value or, if `nil`, throws an assertion.
-    /// Assertions will generally stop the execution of the application in non-release builds (see: `assertionFailure(_:file:line:)`),
+    /// Attempts to unwrap an optional value and either returns the unwrapped value or, if `nil`, causes an assertion.
+    /// Assertions will only stop the execution of the app in non-release builds (see: `assertionFailure(_:file:line:)`),
     /// therefore this method takes a `fallback` parameter to return a safe fallback value for release builds.
     ///
     /// Example usage:
