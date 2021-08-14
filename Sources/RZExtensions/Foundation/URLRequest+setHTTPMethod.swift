@@ -5,6 +5,6 @@ public extension URLRequest {
     ///
     /// - Parameter httpMethod: The `HTTPMethod` to set for the `URLRequest`.
     mutating func setHTTPMethod(_ httpMethod: HTTPMethod) {
-        self.httpMethod = httpMethod.rawValue
+        self.httpMethod = httpMethod.methodName
     }
 }
