@@ -14,7 +14,9 @@ public struct HTTPMethod {
     /// The uppercased name of the HTTP Method (e.g. "GET").
     public let methodName: String
 
-    init(_ methodName: String) {
+    /// Creates a new `HTTPMethod`.
+    /// - Parameter methodName: The HTTP method name. This will be forced to be uppercased.
+    public init(_ methodName: String) {
         self.methodName = methodName.uppercased()
     }
 }

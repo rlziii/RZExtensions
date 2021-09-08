@@ -7,11 +7,11 @@
 public struct GenericError: Error {
     private let message: String
 
-    var localizedDescription: String { message }
+    public var localizedDescription: String { message }
 
     /// Creates a new `GenericError` with an optional error message.
     /// - Parameter message: An optional error message; defaults to an empty message.
-    init(_ message: String = "") {
+    public init(_ message: String = "") {
         self.message = message
     }
 }
