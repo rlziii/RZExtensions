@@ -5,11 +5,7 @@ public struct HiddenViewModifier: ViewModifier {
     public let isHidden: Bool
 
     public func body(content: Content) -> some View {
-        if isHidden {
-            content.hidden()
-        } else {
-            content
-        }
+        content.opacity(isHidden ? 1 : 0)
     }
 }
 
