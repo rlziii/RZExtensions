@@ -1,3 +1,5 @@
+import Foundation
+
 /// An assertion that checks if the current thread is the main thread.
 ///
 /// This can be used as an internal sanity check that certain code paths are being executed on the main thread without
