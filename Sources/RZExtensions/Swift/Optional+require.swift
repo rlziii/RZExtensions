@@ -13,7 +13,7 @@ public extension Optional {
     /// - Parameters:
     ///   - messageExpression: An optional message to be displayed as part of the failure message during a crash.
     ///   - file: The file of the calling function; this should generally be left alone so the default value can be used.
-    ///   - line: The line of the calling function; this should generally be left along so the default value can be used.
+    ///   - line: The line of the calling function; this should generally be left alone so the default value can be used.
     /// - Returns: The unwrapped value if it exists.
     func require(
         message messageExpression: @autoclosure (() -> String?) = nil,

@@ -14,7 +14,7 @@ public extension Optional {
     /// - Parameters:
     ///   - fallback: The fallback value to use in release builds if the value is `nil`.
     ///   - file: The file of the calling function; this should generally be left alone so the default value can be used.
-    ///   - line: The line of the calling function; this should generally be left along so the default value can be used.
+    ///   - line: The line of the calling function; this should generally be left alone so the default value can be used.
     /// - Returns: The unwrapped value if it exists; if `nil` then this returns the `fallback` value in release builds.
     func unwrap(
         or fallback: @autoclosure () -> Wrapped,
