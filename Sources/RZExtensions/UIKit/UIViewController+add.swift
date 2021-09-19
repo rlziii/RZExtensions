@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     /// Adds a `UIViewController` as a child view controller to this view controller.
     ///
     /// - Parameter child: The `UIViewController` to be added as a child.

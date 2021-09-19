@@ -5,7 +5,7 @@ public extension Collection {
     }
 }
 
-extension Optional where Wrapped: Collection {
+public extension Optional where Wrapped: Collection {
     /// A Boolean value indicating whether the collection is not empty.
     var isNotEmpty: Bool {
         guard let self = self else {
