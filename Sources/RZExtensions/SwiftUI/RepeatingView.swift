@@ -25,7 +25,7 @@ public struct RepeatingView<Content: View>: View {
     }
 
     public var body: some View {
-        ForEach(0..<count) { _ in
+        ForEach(0..<count, id: \.self) { _ in
             content
         }
     }
