@@ -1,3 +1,9 @@
+/// An empty function that does nothing and accepts no arguments.
+/// Ideal to pass as a no-op in place of a closure instead of `{ }` for example.
+public func empty() {
+    // Do nothing.
+}
+
 /// An empty function that does nothing and accepts one argument.
 /// Ideal to pass as a no-op in place of a closure instead of `{ _ in }` for example.
 public func empty<A>(_: A) {
